@@ -1,55 +1,134 @@
-/* Általános stílusok */
+/* Alapvető stílusok */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
+h1 {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+h2, p {
+    text-align: center;
+}
+
+/* Fejléc */
 header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
+    background-color: #023D54;
+    padding: 50px;
+    position: relative;
 }
 
-header h1 {
-  margin: 0;
+.header-content {
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    text-align:right;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 10px;
+#dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+#dropdown-menu ul li {
+    padding: 10px;
 }
 
+#dropdown-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Szekció stílusok */
 section {
-  padding: 20px;
+    padding: 20px;
+    background-color: #94DEA5;
 }
 
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery a {
+    flex: 1;
+    margin: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* Lábléc */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+    background-color: #012B3E;
+    color: white;
+    padding: 20px;
+    position: relative;
 }
 
-/* Reszponzív dizájn */
-@media (min-width: 600px) {
-  section {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.footer-content {
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+    flex-grow: 1;
+}
+
+#user-profile-footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-icon {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    color: white;
+}
+
+#new-user-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #023D54;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#new-user-btn:hover {
+    background-color: #03556F;
+}
+
+/* Mobil nézet */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
 }
