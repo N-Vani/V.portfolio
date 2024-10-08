@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.getElementById('menu-icon');
     const dropdownMenu = document.getElementById('dropdown-menu');
-    
-    // Hamburgermenü működése
-    menuIcon.addEventListener('click', function() {
-        dropdownMenu.classList.toggle('hidden');
-    });
+
+    // Ellenőrizzük, hogy létezik-e a menü ikon
+    if (menuIcon) {
+        menuIcon.addEventListener('click', function() {
+            dropdownMenu.classList.toggle('hidden');
+        });
+    }
 
     const userProfileContainer = document.getElementById('user-profile');
     const newUserButton = document.getElementById('new-user-btn');
@@ -34,8 +36,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Az első felhasználó betöltése oldal betöltésekor
-    fetchNewUser();
+    if (userProfileContainer) {
+        fetchNewUser();
+    }
 
     // Új felhasználó generálása a gomb megnyomásakor
-    newUserButton.addEventListener('click', fetchNewUser);
+    if (newUserButton) {
+        newUserButton.addEventListener('click', fetchNewUser);
+    }
 });
