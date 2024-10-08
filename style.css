@@ -79,6 +79,25 @@ section {
     width: 100%;
     height: auto;
 }
+/* Bemutatkozás szekció stílusok */
+.bio-content {
+    display: flex;
+    align-items: center; /* Kép és szöveg középre igazítása */
+    justify-content: center; /* Középre igazítás */
+    margin: 0 auto; /* Középre igazítja a tartalmat */
+    max-width: 800px; /* Max szélesség a szekcióhoz */
+    position: relative; /* Pozicionáláshoz */
+}
+
+.bio-image {
+    margin-right: 20px; /* Kép és szöveg közötti távolság */
+    max-width: 40%; /* Kép maximális szélessége */
+    height: auto; /* Arányok megőrzése */
+}
+
+#bemutatkozas p {
+    text-align: left; /* Szöveg balra igazítása */
+}
 
 /* Elérhetőség szekció */
 #elerhetoseg {
