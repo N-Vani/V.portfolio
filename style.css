@@ -1,6 +1,6 @@
 /* Alapvető stílusok */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ h2, p {
 
 /* Fejléc */
 header {
-    background-color: #023D54;
+    background-color: #0c222c;
     padding: 50px;
     position: relative;
 }
@@ -59,8 +59,8 @@ header {
 
 /* Szekció stílusok */
 section {
-    padding: 20px;
-    background-color: #94DEA5;
+    padding: 100px;
+    background-color: #91cf99;
 }
 
 .gallery {
@@ -78,10 +78,33 @@ section {
     width: 100%;
     height: auto;
 }
+/* Elérhetőség szekció */
+#elerhetoseg {
+    margin-top: 0px;
+}
+
+/* Instagram ikon stílus */
+.instagram-icon {
+    width: 20px; /* Az ikon szélessége */
+    height: auto; /* Az arány megőrzése */
+    vertical-align: middle; /* Igazítja az ikont a szöveggel */
+    margin-right: 8px; /* Kicsit távol a szövegtől */
+}
+
+/* Instagram link stílus */
+.instagram-link {
+    text-decoration: none; /* Eltávolítja az aláhúzást */
+    color: #023D54; /* A szöveg színe */
+}
+
+.instagram-link:hover {
+    text-decoration: underline; /* Aláhúzás, amikor a hivatkozás fölé viszed az egeret */
+}
+
 
 /* Lábléc */
 footer {
-    background-color: #012B3E;
+    background-color: #0c222c;
     color: white;
     padding: 20px;
     position: relative;
