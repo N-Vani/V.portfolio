@@ -38,7 +38,7 @@ header {
 }
 
 .menu-icon {
-    font-size: 24px;
+    font-size: 50px;
     cursor: pointer;
     color: white;
     text-align: right;
@@ -58,6 +58,7 @@ header {
 #dropdown-menu ul li a {
     color: white;
     text-decoration: none;
+    font-size: larger;
 }
 
 .hidden {
@@ -87,6 +88,9 @@ section {
     width: 350px; /* Egységes képméret */
     height: 350px; /* Egységes képméret */
     object-fit: cover; /* A kép arányainak megőrzése */
+    border-style: solid;
+    border-color: #023D54;
+    border-width: 3px;
 }
 
 .gallery-item p {
@@ -123,6 +127,9 @@ section {
     height: 780px; /* Kép magassága */
     object-fit: cover; /* Megőrzi a képarányokat */
     margin: 0 10px; /* Térköz a képek között */
+    border-style: solid;
+    border-color: #023D54;
+    border-width: 3px;
 }
 
 /* Piramis elrendezés a harmadik sorhoz */
@@ -156,6 +163,10 @@ section {
     margin-right: 20px; /* Kép és szöveg közötti távolság */
     max-width: 40%; /* Kép maximális szélessége */
     height: auto; /* Arányok megőrzése */
+    border-style:groove;
+    border-color: #023D54;
+    border-radius: 15px;
+    border-width: 5px;
 }
 
 #bemutatkozas p {
