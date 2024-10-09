@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Fejléc -->
     <header>
         <div class="header-content">
             <h1>Nguyen Vanessa</h1>
+            <h3>Grafikus, Dobos, Egyetemista</h3>
             <div class="menu-icon" id="menu-icon">&#9776;</div>
             <nav id="dropdown-menu" class="hidden">
                 <ul>
@@ -20,19 +22,33 @@
                     <li><a href="szofi.html">Cicám, Szofi</a></li>
                 </ul>
             </nav>
-            
-            
         </div>
     </header>
 
+    <!-- Szekció -->
     <section>
         <h2>Cicám, Szofi</h2>
         <p>Itt írom le Szofi történetét és jellemét...</p>
+         <!-- Képek Galéria -->
+         <div class="gallery">
+            <img src="Szofi.jpg" alt="Cica" style="align-items: center; width: 540px; height: 780px;">
+         </div>
     </section>
 
+    <!-- Lábléc -->
     <footer>
-        <p>Nguyen Vanessa @2024</p>
+        <div class="footer-content">
+            <p>Nguyen Vanessa @2024</p>
+            <div id="user-profile-footer">
+                <h3>Jelenlegi felhasználó</h3>
+                <div id="user-profile">
+                    <!-- A randomuser API adatai ide kerülnek -->
+                </div>
+                <button id="new-user-btn">Új felhasználó</button>
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
+

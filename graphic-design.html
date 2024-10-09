@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Fejléc -->
     <header>
         <div class="header-content">
             <h1>Nguyen Vanessa</h1>
+            <h3>Grafikus, Dobos, Egyetemista</h3>
             <div class="menu-icon" id="menu-icon">&#9776;</div>
             <nav id="dropdown-menu" class="hidden">
                 <ul>
@@ -23,13 +25,40 @@
         </div>
     </header>
 
+    <!-- Szekció -->
     <section>
         <h2>Tervezőgrafika</h2>
-        <p>Itt található a tervezőgrafika munkáim bemutatása...</p>
+        <div class="bio-content">
+            <p>Ezen az oldalon a grafikai alkotásaimat szeretném bemutatni, a saját sárkány témájú karakteremmel és különböző logóimmal.</p>
+        </div>
+        
+        <!-- Képek Galéria -->
+        <div class="gallery">
+            <div class="gallery-row">
+                <img src="S_Dragon.png" alt="Kép 1" class="gallery-image">
+                <img src="Dragon_Splash.png" alt="Kép 2" class="gallery-image">
+                <img src="Demon_Sigil.png" alt="Kép 3" class="gallery-image">
+            </div>
+            <div class="gallery-row">
+                <img src="Dragon_logo.png" alt="Kép 4" class="gallery-image">
+                <img src="Dragon_Circle.png" alt="Kép 5" class="gallery-image">
+                <img src="V_Logo.png" alt="Kép 6" class="gallery-image">
+            </div>
+        </div>
     </section>
 
+    <!-- Lábléc -->
     <footer>
-        <p>Nguyen Vanessa @2024</p>
+        <div class="footer-content">
+            <p>Nguyen Vanessa @2024</p>
+            <div id="user-profile-footer">
+                <h3>Jelenlegi felhasználó</h3>
+                <div id="user-profile">
+                    <!-- A randomuser API adatai ide kerülnek -->
+                </div>
+                <button id="new-user-btn">Új felhasználó</button>
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

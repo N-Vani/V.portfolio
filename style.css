@@ -1,6 +1,7 @@
 /* Alapvető stílusok */
 body {
     font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +17,7 @@ h1 {
 
 h2, p {
     text-align: center;
+    
 }
 h3 {
     text-align: center;
@@ -65,26 +67,83 @@ header {
 /* Szekció stílusok */
 section {
     padding: 100px;
-    background-color: #4aae97;
+    background-color: #1a7980;
 }
 
+/* Fotógaléria stílusok */
 .gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-.gallery a {
+.gallery-item {
     flex: 1;
     margin: 10px;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
+.gallery-item img {
+    width: 350px; /* Egységes képméret */
+    height: 350px; /* Egységes képméret */
+    object-fit: cover; /* A kép arányainak megőrzése */
 }
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.gallery-item a {
+    text-decoration: none;
+    color: #023D54; /* Link színe */
+}
+
+.gallery-item a:hover {
+    text-decoration: underline;
+    color: #03556F; /* Link színváltoztatás hover állapotban */
+}
+/* Képgaléria stílusok */
+.gallery {
+    display: flex;
+    flex-direction: column; /* Oszlopos elrendezés a sorok számára */
+    align-items: center; /* Középre igazítja a sorokat */
+    margin-top: 20px; /* Térköz a galéria felett */
+}
+
+.gallery-row {
+    display: flex; /* Soros elrendezés a képekhez */
+    justify-content: center; /* Középre igazítja a képeket */
+    margin-bottom: 20px; /* Térköz a sorok között */
+}
+
+.gallery-image {
+    width: 540px; /* Kép szélessége */
+    height: 780px; /* Kép magassága */
+    object-fit: cover; /* Megőrzi a képarányokat */
+    margin: 0 10px; /* Térköz a képek között */
+}
+
+/* Piramis elrendezés a harmadik sorhoz */
+.pyramid-row {
+    display: flex;
+    justify-content: center;
+}
+
+.pyramid-image {
+    margin: 0 5px; /* Térköz a képek között */
+}
+
+.pyramid-image:nth-child(2) {
+    margin-left: 20px; /* Középső kép eltolása */
+    margin-right: 20px; /* Középső kép eltolása */
+}
+
+
 /* Bemutatkozás szekció stílusok */
 .bio-content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     align-items: center; /* Kép és szöveg középre igazítása */
     justify-content: center; /* Középre igazítás */
@@ -119,7 +178,7 @@ section {
 /* Instagram link stílus */
 .instagram-link {
     text-decoration: none; /* Eltávolítja az aláhúzást */
-    color: #023D54; /* A szöveg színe */
+    color: #151d21; /* A szöveg színe */
 }
 
 .instagram-link:hover {
