@@ -17,6 +17,10 @@ h1 {
 h2, p {
     text-align: center;
 }
+h3 {
+    text-align: center;
+    color:#0b6884;
+}
 
 /* Fejléc */
 header {
@@ -26,7 +30,7 @@ header {
 }
 
 .header-content {
-    display: flex;
+    text-align: center;
     justify-content: space-between;
     align-items: center;
 }
@@ -61,7 +65,7 @@ header {
 /* Szekció stílusok */
 section {
     padding: 100px;
-    background-color: #91cf99;
+    background-color: #4aae97;
 }
 
 .gallery {
