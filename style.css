@@ -337,4 +337,77 @@ footer p {
 
     /* Piramis képelrendezés mobilon */
     .pyramid-row {
-        flex-direction: column; /* Eg
+        flex-direction: column; 
+    }
+}
+/* Mobil nézet */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column; /* Képek egy oszlopban mobilon */
+        align-items: center;
+    }
+    
+    .gallery-image {
+        width: 100%; /* Képek szélességének beállítása mobilon */
+        height: auto; /* Magasság automatikusan igazodik */
+        margin-bottom: 15px; /* Térköz a képek között */
+    }
+
+    .gallery-image-large {
+        width: 100%; /* A nagy kép szélessége mobilon */
+        height: auto;
+    }
+
+    .gallery-row {
+        flex-direction: column; /* Sorok egy oszlopban jelennek meg mobilon */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Mobil nézet */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column; /* Képek egy oszlopban mobilon */
+        align-items: center;
+    }
+    
+    .gallery-image {
+        width: 100%; /* Képek szélessége mobilon */
+        height: auto; /* Magasság automatikusan igazodik */
+        margin-bottom: 15px; /* Térköz a képek között */
+    }
+
+    .gallery-row {
+        flex-direction: column; /* Sorok egy oszlopban jelennek meg mobilon */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pyramid-row {
+        flex-direction: column; /* Piramis képek is egymás alatt mobilon */
+        align-items: center;
+    }
+
+    .pyramid-image {
+        width: 100%; /* Piramis képek is teljes szélességűek mobilon */
+        margin-bottom: 15px; /* Térköz a képek között */
+    }
+}
+/* Mobil nézethez */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 100%; /* Kép teljes szélességben jelenjen meg mobilon */
+        height: auto; /* Magasság automatikusan igazodik a szélességhez */
+        margin-bottom: 15px; /* Térköz a képek között mobilon */
+    }
+    
+    /* Egyéb elem igazítások a mobilhoz, ha szükséges */
+    .header-content h1, .header-content h3 {
+        text-align: center; /* Fejléc középre igazítása */
+    }
+
+    .footer-content {
+        text-align: center; /* Lábléc középre igazítása */
+    }
+}
