@@ -245,7 +245,96 @@ footer p {
 
 /* Mobil nézet */
 @media (max-width: 768px) {
+    /* Test szöveg mérete */
+    body {
+        font-size: medium;
+    }
+
+    /* Fejléc */
+    header {
+        padding: 30px;
+    }
+
+    /* Menüikon mérete */
+    .menu-icon {
+        font-size: 40px;
+    }
+
+    /* Galéria */
     .gallery {
         flex-direction: column;
+        align-items: center;
     }
-}
+
+    .gallery-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-item img {
+        width: 90%; /* A kép szélessége kisebb képernyőn */
+        height: auto; /* Megőrzi a képarányokat */
+    }
+
+    /* Bemutatkozás szekció */
+    .bio-content {
+        flex-direction: column; /* Oszlopos elrendezés */
+        text-align: center;
+    }
+
+    .bio-image {
+        max-width: 80%; /* Kisebb képméret mobilon */
+        margin: 20px 0;
+    }
+
+    #bemutatkozas p {
+        text-align: center; /* Szöveg középre igazítása */
+        font-size: 16px; /* Szöveg mérete csökkentve */
+    }
+
+    /* Fotógaléria */
+    .gallery {
+        flex-direction: column; /* Egymás alá rendezés */
+    }
+
+    .gallery-item {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%; /* Kép szélessége igazodik a kijelzőhöz */
+        height: auto; /* Magasság automatikus */
+    }
+
+    /* Elérhetőség szekció */
+    #elerhetoseg p {
+        font-size: 16px; /* Szöveg méretének csökkentése */
+    }
+
+    /* Instagram ikon és link mérete */
+    .instagram-icon {
+        width: 16px; /* Kisebb ikon mobilon */
+    }
+
+    .instagram-link {
+        font-size: 16px; /* Kisebb szövegméret */
+    }
+
+    /* Lábléc */
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 14px; /* Kisebb betűméret mobilon */
+    }
+
+    #new-user-btn {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    /* Piramis képelrendezés mobilon */
+    .pyramid-row {
+        flex-direction: column; /* Eg
